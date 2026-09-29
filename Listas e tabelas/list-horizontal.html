@@ -1,0 +1,59 @@
+<!-- Informa ao navegador que o documento usa o padrão HTML5. -->
+<!DOCTYPE html>
+<!-- Elemento raiz da página; lang informa o idioma principal para acessibilidade e mecanismos de busca. -->
+<html lang="pt-BR">
+<!-- Contém configurações e informações da página que não são exibidas como conteúdo. -->
+<head>
+    <!-- Define a codificação para exibir corretamente letras acentuadas e outros caracteres. -->
+    <meta charset="UTF-8">
+    <!-- Faz a página se ajustar à largura do dispositivo, importante para celulares. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Texto apresentado na aba ou janela do navegador. -->
+    <title>Lista Horizontal</title>
+    <!-- CSS interno: regras de aparência aplicadas aos elementos desta página. -->
+<style>
+    /* Remove marcadores e espaços padrão da lista; esconde conteúdo que ultrapasse a barra; define fundo cinza-escuro. */
+    ul {
+        list-style-type: none; /* Retira as bolinhas dos itens da lista. */
+        margin: 0; /* Remove a margem padrão do navegador. */
+        padding: 0; /* Remove o recuo interno padrão do navegador. */
+        overflow: hidden; /* Contém os itens flutuantes dentro da área da lista. */
+        background-color: #333; /* Aplica um fundo cinza-escuro à barra. */
+    }
+
+    /* Seleciona cada item da lista e os posiciona lado a lado. */
+    li {
+        float: left; /* Faz cada item flutuar à esquerda, formando uma lista horizontal. */
+    }
+
+    /* Seleciona links que estão dentro de itens da lista. */
+    li a {
+        display: block; /* Faz o link ocupar uma área retangular clicável. */
+        color: white; /* Define a cor do texto como branco. */
+        text-align: center; /* Centraliza o texto dentro da área do link. */
+        padding: 16px; /* Cria espaço interno ao redor do texto. */
+        text-decoration: none; /* Remove o sublinhado padrão dos links. */
+    }
+
+    /* Estado de interação: aplica esta regra quando o ponteiro passa sobre o link. */
+    li a:hover {
+        background-color: #111; /* Escurece o fundo do link ao passar o ponteiro. */
+    }
+</style>
+</head>
+<!-- Contém o conteúdo visível e interativo da página. -->
+<body>
+    <!-- Lista não ordenada; aqui ela é usada como estrutura da barra de navegação. -->
+    <ul>
+        <!-- Cada li é um item da lista; cada a cria um link. href="#home" aponta para um elemento com id="home" na página. -->
+        <li><a href="#home">Home</a></li>
+        <!-- Este link aponta para o elemento que tiver id="news". -->
+        <li><a href="#news">News</a></li>
+        <!-- Este link aponta para o elemento que tiver id="contact". -->
+        <li><a href="#contact">Contact</a></li>
+        <!-- Este link aponta para o elemento que tiver id="about". -->
+        <li><a href="#about">About</a></li>
+    </ul>
+</body>
+<!-- Fecha o elemento raiz que contém todo o documento HTML. -->
+</html>
