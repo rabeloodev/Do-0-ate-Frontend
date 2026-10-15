@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js and Html</title>
+</head>
+<body>
+    <h1>Html JavaScript</h1>
+    <p>O javascript torna as páginas html mais dinâmicas e interativas.</p>
+
+    <h2>My First JavaScript</h2>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()"> Clique aqui para exibir a data e a hora.</button>
+    <p id="demo"></p>
+
+    <h1>A tag html script</h1>
+
+    <p> A tag HTML script é usada para definir um script do lado do cliente (JavaScript).</p>
+
+    <p>O script elemento contém instruções de script ou aponta para um arquivo de script externo através do srcatributo.</p>
+
+    <p>Os usos mais comuns do JavaScript incluem manipulação de imagens, validação de formulários e alterações dinâmicas de conteúdo.</p>
+
+    <p>Para selecionar um elemento HTML, o JavaScript geralmente usa o document.getElementById()método.</p>
+
+    <p>Este exemplo em JavaScript escreve "Olá JavaScript!" em um elemento HTML com o id="demo":</p>
+
+    <h3>Exemplo</h3>
+    <p id="demo2"></p>
+    <script>
+        document.getElementById("demo2").innerHTML = "Olá JavaScript!";
+    </script>
+
+    <h2>Js alterar estilos</h2>
+
+    <p id="demo3">Js can change the style of HTML elements.</p>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo3").style.fontSize = "35px";
+            document.getElementById("demo3").style.color = "red";
+
+            document.getElementById("demo3").style.backgroundColor = "yellow";
+        }
+    </script>
+    <button type="button" onclick="myFunction()">Click Me!</button>
+</body>
+</html>
